@@ -64,6 +64,116 @@ body {
   color: var(--text-color);
 }
 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Title */
+.logo-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Accordion Styles */
+.accordion__container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.accordion__item {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #0088cc;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion__title {
+    font-size: 1.2rem;
+}
+
+.accordion__icon {
+    font-size: 1.5rem;
+}
+
+/* Accordion Content */
+.accordion__content {
+    display: none;
+    padding: 15px;
+    background-color: white;
+}
+
+.accordion__description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Telegram Button */
+.telegram-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.telegram-btn a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.telegram-btn a:hover {
+    background-color: #0077b6;
+}
+
+.telegram-btn i {
+    font-size: 1.5rem;
+}
+
+
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
