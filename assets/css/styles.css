@@ -7,7 +7,7 @@
   --first-color: hsl(var(--hue-color), 48%, 35%);
   --title-color: hsl(var(--hue-color), 48%, 22%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
-  --body-color: hsl(var(--hue-color), 49%, 96%);
+  --body-color: hsl(var(--hue-color), 49%, 96%); /* Light gray background */
   --container-color: #aaa7cc;
 
   /*========== Font and typography ==========*/
@@ -29,8 +29,8 @@
 .accordion__content {
   overflow: hidden;
   height: 0;
-  max-height: 300px;
-  overflow-y: auto;
+  max-height: 300px; /* Adjust the max height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
   transition: all 0.25s ease;
 }
 
@@ -43,11 +43,11 @@
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Keep width and height the same for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image scales properly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
 }
 
 /*=============== BASE ===============*/
@@ -60,7 +60,7 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color: var(--body-color); /* Light gray background */
   color: var(--text-color);
 }
 
@@ -98,7 +98,7 @@ body {
 .accordion__header {
   display: flex;
   column-gap: .5rem;
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 1rem;
   cursor: pointer;
 }
 
@@ -166,8 +166,9 @@ body {
   background-color: #8ad8ff;
 }
 
+/* Additional 5 Boxes */
 .accordion__item:nth-child(5) {
-  background-color: #f0fff4;
+  background-color: #f0fff4; /* Light green */
 }
 
 .accordion__item:nth-child(5)::after {
@@ -175,7 +176,7 @@ body {
 }
 
 .accordion__item:nth-child(6) {
-  background-color: #fff4f0;
+  background-color: #fff4f0; /* Light peach */
 }
 
 .accordion__item:nth-child(6)::after {
@@ -183,7 +184,7 @@ body {
 }
 
 .accordion__item:nth-child(7) {
-  background-color: #f5f0ff;
+  background-color: #f5f0ff; /* Light lavender */
 }
 
 .accordion__item:nth-child(7)::after {
@@ -191,7 +192,7 @@ body {
 }
 
 .accordion__item:nth-child(8) {
-  background-color: #f0f8ff;
+  background-color: #f0f8ff; /* Light sky blue */
 }
 
 .accordion__item:nth-child(8)::after {
@@ -199,53 +200,12 @@ body {
 }
 
 .accordion__item:nth-child(9) {
-  background-color: #fff0fa;
+  background-color: #fff0fa; /* Light pink */
 }
 
 .accordion__item:nth-child(9)::after {
   background-color: #ff8ad4;
 }
-
-/*=============== FOOTER STYLING ===============*/
-/* Footer Styling */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 5px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* Time & Establishment */
-.footer-info {
-  font-size: 12px;
-  opacity: 0.8;
-  margin-top: 5px;
-}
-
-.current-time {
-  font-weight: bold;
-  color: #ffc107; /* Yellow color for time */
-}
-
 
 /*=============== ACCORDION CONTENT ===============*/
 .accordion__content {
