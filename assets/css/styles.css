@@ -33,6 +33,23 @@
   overflow-y: auto; /* Enables vertical scrolling */
   transition: all 0.25s ease;
 }
+
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Keep width and height the same for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image scales properly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
