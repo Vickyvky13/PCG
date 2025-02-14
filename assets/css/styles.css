@@ -207,29 +207,45 @@ body {
 }
 
 /*=============== FOOTER STYLING ===============*/
+/* Footer Styling */
 footer {
   background: #222;
   color: #fff;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
 }
 
 .footer-links a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: 500;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
 }
 
-.footer-time {
-  margin-top: 10px;
-  font-size: 14px;
+/* Time & Establishment */
+.footer-info {
+  font-size: 12px;
   opacity: 0.8;
+  margin-top: 5px;
 }
+
+.current-time {
+  font-weight: bold;
+  color: #ffc107; /* Yellow color for time */
+}
+
 
 /*=============== ACCORDION CONTENT ===============*/
 .accordion__content {
