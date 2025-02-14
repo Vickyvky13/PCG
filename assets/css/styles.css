@@ -133,6 +133,13 @@ body {
   border-radius: .25rem 0 0 .25rem;
 }
 
+.logo-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
 /*=============== COLORS FOR ACCORDION ITEMS ===============*/
 .accordion__item:nth-child(1) {
   background-color: #fff7f0;
