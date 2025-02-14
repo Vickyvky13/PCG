@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,15 +16,15 @@
         /* Logo Styling */
         .logo-container {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
             margin-bottom: 1rem;
         }
 
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -38,15 +38,48 @@
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
         }
+
+        /* Telegram Button */
+        .telegram-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .telegram-btn a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #0088cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .telegram-btn a:hover {
+            background-color: #0077b6;
+        }
+
+        .telegram-btn i {
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
     <section class="accordion container">
-        <!-- Logo -->
+        <!-- Logo Section -->
         <div class="logo-container">
-            <img src="assets/Logo.jpg" alt="Logo" class="logo">
-            <h2 class="logo-title">PCG Group Rules</h2>
+            <img src="assets/Logo.jpg" alt="Left Logo" class="logo">
+            <img src="assets/Logo.jpg" alt="Center Logo" class="logo">
+            <img src="assets/Logo.jpg" alt="Right Logo" class="logo">
         </div>
+
+        <!-- Title Below Logo -->
+        <h2 class="logo-title">PCG Group Rules</h2>
 
         <div class="accordion__container">
             <div class="accordion__item">
@@ -132,6 +165,13 @@
                     </p>
                 </div>
             </div>
+        </div>
+
+        <!-- Telegram Button -->
+        <div class="telegram-btn">
+            <a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank">
+                <i class='bx bxl-telegram'></i> Join Telegram Group
+            </a>
         </div>
     </section>
 
