@@ -153,6 +153,29 @@
         </div>
     </section>
 
+ <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://t.me/solo_tree_support" target="_blank">Support Group</a> |
+            <a href="https://t.me/solotreee" target="_blank">Channel</a> |
+            <a href="https://t.me/SoloTreeBots" target="_blank">SoloTreeBots</a>
+        </div>
+        <div class="footer-time">
+            ESTD - Mar/2022 | Current Time: <span id="currentTime">--:--:--</span>
+        </div>
+    </footer>
+
+    <!-- Script for Accordion and Time -->
+    <script>
+        // Update current time every second
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById("currentTime").textContent = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
 </body>
