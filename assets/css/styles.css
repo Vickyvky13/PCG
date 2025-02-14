@@ -7,7 +7,8 @@
   --first-color: hsl(var(--hue-color), 48%, 35%);
   --title-color: hsl(var(--hue-color), 48%, 22%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
-  --body-color: hsl(var(--hue-color), 49%, 96%); /* Light gray background */
+  --body-color: #000000;
+ /* Light gray background */
   --container-color: #aaa7cc;
 
   /*========== Font and typography ==========*/
